@@ -1,7 +1,7 @@
 {
   "name": "react-shop",
   "version": "1.0.0",
-  "description": "react eshop",
+  "description": "Building my first app using React.js",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "react",
     "javascript"
   ],
-  "author": "Oscar Barajas <oscar@platzi.com>",
+  "author": "Diego González <diegom.develops@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.15.0",

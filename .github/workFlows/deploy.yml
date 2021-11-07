@@ -12,7 +12,6 @@ jobs:
       -
         name: Gen dummy page
         run: |
-          mkdir dist
           cat > dist/index.html <<EOL
           <!doctype html>
           <html>
