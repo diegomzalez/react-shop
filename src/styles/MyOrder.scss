@@ -11,6 +11,8 @@
 	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
+	z-index: 2;
+	height: fit-content;
 }
 .title-container {
 	display: flex;
