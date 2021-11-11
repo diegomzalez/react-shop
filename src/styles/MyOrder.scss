@@ -1,5 +1,11 @@
 @import 'vars';
-
+scroll-container {
+	display: block;
+    width: 320px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 .MyOrder {
 	width: 360px;
 	padding: 24px;
@@ -13,6 +19,8 @@
 	border: 1px solid var(--very-light-pink);
 	z-index: 2;
 	height: fit-content;
+	scroll-behavior: smooth;
+	display: block;
 }
 .title-container {
 	display: flex;
