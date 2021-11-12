@@ -22,6 +22,7 @@ const MyOrder = () => {
 									<OrderItem key={`orderItem-${product.id}` && console.log(product.id)} product={product} />
 								))}
 							</scroll-page>
+						</scroll-container>
 							<div className="order">
 								<p>
 									<span>Total</span>
@@ -31,7 +32,7 @@ const MyOrder = () => {
 							<button className="primary-button">
 								Checkout
 							</button>
-						</scroll-container>
+						
 					</div>
 					
 				</aside>
