@@ -18,8 +18,8 @@ const MyOrder = () => {
 					<div className="my-order-content">
 						<scroll-container>
 							<scroll-page>
-								{state.cart.map((product) => (
-									<OrderItem key={`orderItem-${product.id}` && console.log(product.id)} product={product} />
+								{state.cart.map((product, index) => (
+									<OrderItem key={`orderItem-${product.id}-${index}`} product={product} />
 								))}
 							</scroll-page>
 						</scroll-container>

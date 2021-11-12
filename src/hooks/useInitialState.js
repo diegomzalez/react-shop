@@ -11,25 +11,27 @@ const useInitialState = () => {
     const addToCart = (payload) => {
         setState({
             ...state,
-            cart: [...state.cart, payload],
+            cart: state.cart.includes(payload)
+            ? [...state.cart]
+            : [...state.cart, payload]
         });
     };
     const removeFromCart = (payload) => {
         setState({
             ...state,
-            cart: state.cart.filter(items => items.id !== payload.id)
+            cart: state.cart.filter(items => items.id !== payload.id),
         });
     }
     const toggleMenu = () => {
         setState({
             ...state,
-            isMenuOpen: !state.isMenuOpen
+            isMenuOpen: !state.isMenuOpen,
         });
     }
     const toggleOrder = () => {
         setState({
             ...state,
-            isOrderOpen: !state.isOrderOpen
+            isOrderOpen: !state.isOrderOpen,
         });
     }
     return {
