@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import '@styles/MyOrder.scss';
@@ -6,13 +6,13 @@ import useSumTotal from '@hooks/useSumTotal';
 import arrow from '@icons/flechita.svg';
 
 const MyOrder = () => {
-	const { state } = useContext(AppContext);
+	const { state, toggleOrder } = useContext(AppContext);
 	
 	return (
 		
 				<aside className="MyOrder">
 					<div className="title-container">
-						<img src={arrow} alt="arrow" />
+						<img src={arrow} alt="arrow" onClick={() => toggleOrder()}/>
 						<p className="title">My order</p>
 					</div>
 					<div className="my-order-content">
