@@ -3,11 +3,17 @@
 .mobile-menu {
     padding: 24px;
     display: block;
-    position: absolute;
-    bottom: -632px;
+    position: fixed;
     background-color: white;
     z-index: 100;
-    width: 328px;
+    width: 100%;
+    bottom: 0;
+}
+.mobile-menu-close {
+    right: 30px;
+    display: block;
+    position: fixed;
+    cursor: pointer;
 }
 .mobile-menu a {
     text-decoration: none;

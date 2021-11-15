@@ -5,7 +5,6 @@ import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import AppContext from '@context/AppContext';
 import MyOrder from '@containers/MyOrder';
-import MobileMenu from '@components/MobileMenu';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 const Header = () => {
@@ -54,7 +53,6 @@ const Header = () => {
 					</ul>
 				</div>
 				{state.isMenuOpen && <Menu />}
-				{state.isMenuMobile && <MobileMenu />}
 				{state.isOrderOpen && <MyOrder />}
 			</nav>
 		</div>

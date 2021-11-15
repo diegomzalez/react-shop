@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from '@logos/logo_yard_sale.svg';
 import '@styles/MobileMenu.scss';
+import close from '@icons/icon_close.png';
 
 const MobileMenu = () => {
     return (
         <div className="mobile-menu">
         <ul>
+            <img src={close} alt="close" className="mobile-menu-close" />
             <li>
                 <a href="">CATEGORIES</a>
             </li>
