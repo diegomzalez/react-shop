@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '@styles/MobileMenu.scss';
 import close from '@icons/icon_close.png';
+import AppContext from '@context/AppContext';
 
 const MobileMenu = () => {
+    const { toggleMenuMobile } = useContext(AppContext);
     return (
         <div className="mobile-menu">
         <ul>
-            <img src={close} alt="close" className="mobile-menu-close" />
+            <img src={close} alt="close" className="mobile-menu-close" onClick={() => toggleMenuMobile()}/>
             <li>
                 <a href="">CATEGORIES</a>
             </li>
