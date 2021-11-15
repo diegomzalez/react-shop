@@ -1,20 +1,21 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import AppContext from '@context/AppContext';
 import MyOrder from '@containers/MyOrder';
+import MobileMenu from '@components/MobileMenu';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 const Header = () => {
-	const { state, toggleMenu, toggleOrder } = useContext(AppContext);
+	const { state, toggleMenu, toggleOrder, toggleMenuMobile } = useContext(AppContext);
 	
 
 	return (
-		<div className="Menux">
+		<div className="Header">
 			<nav>
-				<img src={menu} alt="menu" className="menu" />
+				<img src={menu} alt="menu" className="menu" onClick={() => toggleMenuMobile()}/>
 				<div className="navbar-left">
 					<img src={logo} alt="logo" className="nav-logo" />
 					<ul>
@@ -53,6 +54,7 @@ const Header = () => {
 					</ul>
 				</div>
 				{state.isMenuOpen && <Menu />}
+				{state.isMenuMobile && <MobileMenu />}
 				{state.isOrderOpen && <MyOrder />}
 			</nav>
 		</div>
