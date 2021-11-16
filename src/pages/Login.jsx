@@ -25,8 +25,8 @@ const Login = () => {
 					<input type="text" name="email" placeholder="platzi@example.cm" className="input input-email" />
 					<label htmlFor="password" className="label">Password</label>
 					<input type="password" name="password" placeholder="*********" className="input input-password" />
-					<Link to="//">
-						<button onClick={handlerSubmit}  className="primary-button login-button">
+					<Link to="/">
+						<button onClick={handlerSubmit}  className="primary-button-login-button">
 							Log in
 						</button>
 					</Link>

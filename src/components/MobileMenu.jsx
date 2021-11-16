@@ -36,7 +36,7 @@ const MobileMenu = () => {
                 <a onClick={() => toggleOrder()}>My orders</a>
             </li>
             <li>
-                <a href="">My accounts</a>
+                <a href="/account">My accounts</a>
             </li>
         </ul>
         <ul className="mobile-menu-email-and-sign-out">
@@ -44,7 +44,7 @@ const MobileMenu = () => {
                 <a href="/" className="mobile-menu-email">platzi@example.com</a>
             </li>
             <li>
-                <a className="mobile-menu-sign-out" href="/">Sign out</a>
+                <a className="mobile-menu-sign-out" href="/login">Sign out</a>
             </li>
         </ul>
     </div>

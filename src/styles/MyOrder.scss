@@ -1,8 +1,9 @@
 @import 'vars';
+
 scroll-container {
 	display: block;
     width: fit-content;
-    height: fit-content;
+    height: 168px;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }

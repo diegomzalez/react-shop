@@ -45,7 +45,7 @@
 .input-email {
 	margin-bottom: 22px;
 }
-.primary-button {
+.primary-button-login-button {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
 	border: none;
@@ -55,6 +55,8 @@
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
+	margin-top: 14px;
+	margin-bottom: 30px;
 }
 .secondary-button {
 	background-color: var(--white);
@@ -67,10 +69,8 @@
 	font-weight: bold;
 	height: 50px;
 }
-.login-button {
-	margin-top: 14px;
-	margin-bottom: 30px;
-}
+
+
 @media (max-width: 640px) {
 	.logo {
 		display: block;
