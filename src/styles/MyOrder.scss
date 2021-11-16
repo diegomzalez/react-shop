@@ -1,8 +1,8 @@
 @import 'vars';
 scroll-container {
 	display: block;
-    width: 320px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -34,6 +34,7 @@ scroll-container::-webkit-scrollbar {
 .title-container img {
 	transform: rotate(180deg);
 	margin-right: 14px;
+	cursor: pointer;
 }
 .title {
 	font-size: var(--lg);

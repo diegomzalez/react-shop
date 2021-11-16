@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/CreateAccount.scss';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const CreateAccount = () => {
 	return (
@@ -15,7 +16,9 @@ const CreateAccount = () => {
 						<label for="password" className="label">Password</label>
 						<input type="password" id="password" placeholder="*********" className="input input-password" />
 					</div>
-					<input type="submit" value="Create" className="primary-button login-button" />
+					<Link to="/login">
+						<input type="submit" value="Create" className="primary-button login-button" />
+					</Link>
 				</form>
 			</div>
 		</div>

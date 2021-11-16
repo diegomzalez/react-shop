@@ -4,7 +4,7 @@ import close from '@icons/icon_close.png';
 import AppContext from '@context/AppContext';
 
 const MobileMenu = () => {
-    const { toggleMenuMobile } = useContext(AppContext);
+    const { toggleMenuMobile, toggleOrder } = useContext(AppContext);
     return (
         <div className="mobile-menu">
         <ul>
@@ -33,7 +33,7 @@ const MobileMenu = () => {
         </ul>
         <ul>
             <li>
-                <a href="">My orders</a>
+                <a onClick={() => toggleOrder()}>My orders</a>
             </li>
             <li>
                 <a href="">My accounts</a>

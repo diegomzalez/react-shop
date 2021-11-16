@@ -1,6 +1,7 @@
 import React from 'react';
 import '@styles/NewPassword.scss';
 import logo from '@logos/logo_yard_sale.svg'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const NewPassword = () => {
 	return (
@@ -14,7 +15,9 @@ const NewPassword = () => {
 					<input type="password" id="password" placeholder="*********" className="input input-password" />
 					<label for="new-password" className="label">Password</label>
 					<input type="password" id="new-password" placeholder="*********" className="input input-password" />
-					<input type="submit" value="Confirm" className="primary-button login-button" />
+					<Link to="/send-email">
+						<input type="submit" value="Confirm" className="primary-button login-button" />
+					</Link>
 				</form>
 			</div>
 		</div>
